@@ -1,0 +1,9 @@
+#titulo{
+	color: white;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+}

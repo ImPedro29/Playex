@@ -1,0 +1,108 @@
+body{
+	background-color: #d5d2d2;
+}
+form{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+#titulo{
+	font-family: "Roboto" ,sans-serif;
+	position: relative;
+	left: 25px;
+	margin-top: 15px;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.87);
+}
+#subtitulo{
+	font-family: "Roboto" ,sans-serif;
+	position: relative;
+	left: 27px;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.67);
+	margin-top: -10px;
+}
+#caixa-entrar{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 375px;
+	height: 475px;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 2px;
+	box-shadow: 0px 0px 8px rgba(55,55,55,0.6);
+	
+}
+#form-email,#form-senha{
+	border-width: 0px 0px 1px 0px;
+	padding: 3px;
+	border-color: rgba(205,205,205, 0.6);
+	font-family: "Arial", sans-serif;
+	width: 270px;
+	height: 30px;
+	outline: none;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20px;
+	font-size: 17px;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	background-color: transparent;
+	color: rgb(103, 103, 103);
+}
+#form-botao{
+	font: "Arial", sans-serif;
+	width: 120px;
+	height: 30px;
+	outline: none;
+	position: relative;
+	background-color: rgb(87, 104, 222);
+	margin-top: 25px;
+	font-family: "Arial", sans-serif;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	border-width: 0px;
+	color: rgb(223, 223, 223);
+	cursor: pointer;
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+	border-radius: 2px;
+}
+#form-erro{
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	margin-bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	color: rgba(253, 44, 44, 0.83);
+	margin-bottom: -10px;
+	width: 100%;
+	text-align: center;
+}
+/*Animações e efeitos*/
+#form-email-texto,#form-senha-texto{
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	margin-bottom: -20px;
+	margin-left: 55px;
+	position: relative;
+	color: rgb(153, 153, 153);
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	margin-top: 15px;
+}
+#form-email-traco,#form-senha-traco{
+	width: 0px;
+	height: 2px;
+	outline: none;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: -2px;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+	background-color: rgb(87, 104, 222);
+}
