@@ -1,3 +1,9 @@
+function pad(number, size) {
+	let s = String(number);
+	while (s.length < (size || 2)) {s = "0" + s;}
+	return s;
+}
+
 //Mobile Detect
 if(window.orientation != "undefined"){
 	window.addEventListener("orientationchange", function() {
@@ -21,8 +27,6 @@ setInterval(timeUpVideo, 500);
 var layoutSeekTempo = 4; //Tempo em segundos
 var layoutSeekTempo2;
 
-var cloud = "https://storage.googleapis.com/playex-storage/user/123/";
-
 var progresso_carregado_num = 0;
 
 var videoCarregadovar = false;
@@ -38,7 +42,19 @@ var progresso_barra_status = false; // Se a barra estiver sendo mechida cancela 
 var id, video;
 
 
+// let cloud = '';
+//
+// let temp = id.split(',')[0];
+// let ep = id.split(',')[1];
+
+let temp = 3;
+let ep = 13;
+
+let cloud = `https://www.w3schools.com/html/mov_bbb.ogg/`;
+// console.log(cloud);
+
 function variaveis(){
+
 	//Outras
 	video = document.getElementById("vid");
 	videoPRE = document.getElementById("vidPRE");

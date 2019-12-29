@@ -1,0 +1,102 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8"> <!-- SETANDO UTF8 -->
+
+        <title>TITULO TEMPORARIO</title> <!-- TITULO -->
+        <script src="/public/modules/js/player/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="icon" type="image/png" href="/public/images/icon.png"/>
+
+        <link rel='stylesheet' type='text/css' href="/public/modules/css/loading.css">
+        <link rel='stylesheet' type='text/css' href="/public/modules/css/player/all.css">
+    </head>
+	<body>
+	
+		<!-- Carregamento (Estilo I/CSS) -->
+		<div id="player-carregando-css">
+			<div style="width:100%;height:100%" class="lds-eclipse">
+				<div></div>
+			</div>
+		</div>
+	
+		<div id="player-baixo">
+		
+			<!-- Parte da Esquerda -->
+			<img id="player-play" src="/public/images/player/play.png"/>
+			<img id="player-pause" src="/public/images/player/pause.png"/>
+			<img id="player-volume0" src="/public/images/player/volume-0.png"/>
+			<img id="player-volume1" src="/public/images/player/volume-1a50.png"/>
+			<img id="player-volume2" src="/public/images/player/volume-51a100.png"/>
+			<span id="player-tempo">00:00 / 00:00</span>
+			
+			<!-- Parte da Direita -->
+			<img id="player-telacheia" src="/public/images/player/telacheia.png"/>
+			<img id="player-telanormal" src="/public/images/player/telanormal.png"/>
+			<img id="player-configuracoes" src="/public/images/player/configuracoes.png"/>
+			<img id="player-feedback" src="/public/images/player/feedback.png"/>
+			
+			<!-- Parte do Meio -->
+			<input id="player-progresso" min="0" max="1000" step="1" value="0" type="range">
+			<span id="player-progresso-tempo">00:00</span>
+			
+		</div>
+		
+		<!-- Caixa da seleção de volume -->
+		<div id="player-volume-caixa">
+			<input id="player-volume-si" min="0" max="1" step="0.01" value="1" type="range">
+		</div>
+		
+		<!-- Seletor de qualidades (Caixa de seleção) - "Configurações" -->
+		<div id="player-qualidade-seletor">
+			<div id="player-qualidade-selector-qualidades">
+				<button style="" id="player-qualidade-selector-qualidade-botao-auto">
+					AUTO
+				</button>
+				<br>
+				<button style="" id="player-qualidade-selector-qualidade-botao-1080">
+					1080p
+				</button>	
+				<br>
+				<button style="" id="player-qualidade-selector-qualidade-botao-720">
+					720p
+				</button>
+				<br>
+				<button style="" id="player-qualidade-selector-qualidade-botao-360">
+					360p
+				</button>
+				<br>
+				<button style="" id="player-qualidade-selector-qualidade-botao-144">
+					144p
+				</button>
+			</div>
+		</div>
+		
+		<!-- Animações (Pause, play e etc..) -->
+		<div id="player-animacao-play-div">
+			<img id="player-animacao-play" src="/public/images/player/play.png"/>
+		</div>
+		<div id="player-animacao-pause-div">
+			<img id="player-animacao-pause" src="/public/images/player/pause.png"/>
+		</div>
+		<div id="player-animacao-direita-div">
+			<img id="player-animacao-direita" src="/public/images/player/direita.png"/>
+		</div>
+		<div id="player-animacao-esquerda-div">
+			<img id="player-animacao-esquerda" src="/public/images/player/esquerda.png"/>
+		</div>
+		
+		<!-- Parte de cima do player -->
+		<div id="player-cima">
+			<h1 id="player-titulo">TITULO TEMPORARIO</h1>
+		</div>
+		
+		<!-- Vídeo preload -->
+		<video id="vidPRE" src=""></video>
+		
+		<!-- Vídeo em sí -->
+		<video id="vid" src=""></video>
+		
+	</body>
+</html>

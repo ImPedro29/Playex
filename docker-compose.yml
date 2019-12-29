@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+#  front-obs:
+#    build: ./front/.
+#    ports:
+#      - "3001:3001"
+#    volumes:
+#      - './front:/app'
+#    networks:
+#      - observatorio
+  back-playex:
+    build: ./back/.
+    ports:
+      - "3002:3000"
+    networks:
+      - playex
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: tg0vvlbb5o
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./data:/data/db"
+    networks:
+      - playex
+networks:
+  playex:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 13.5.0.0/16
