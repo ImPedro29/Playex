@@ -47,7 +47,7 @@ module.exports = {
                 }));
 
                 await new Promise(((resolve, reject) => {
-                    fs.writeFile('../Playex/tmp/' + response._id, file.data, function (err) {
+                    fs.writeFile('../Playex/tmp/notprocessed/' + response._id, file.data, function (err) {
                         if (err) reject(err);
                         else resolve();
                     });
